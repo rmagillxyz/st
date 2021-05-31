@@ -111,7 +111,9 @@ float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
+	 /* hard contrast: #1d2021 / soft contrast: #32302f */ 
+	/* "#282828", */
+	"#32302f",
 	"#cc241d",
 	"#98971a",
 	"#d79921",
@@ -132,7 +134,7 @@ static const char *colorname[] = {
 	"#add8e6", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
 	/* "#282828", 258 -> bg */
-	/*"#3d3d3d",  258 -> bg */
+	/* "#3d3d3d",  258 -> bg */
 	"#363636", /* 258 -> bg */
 	"#ebdbb2", /* 259 -> fg */
 };
@@ -269,8 +271,8 @@ static Shortcut shortcuts[] = {
 	/* { ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} }, */
 	{ MODKEY,               XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ MODKEY,               XK_Page_Down,   kscrolldown,    {.i = -1} },
-	{ MODKEY,               XK_k,           kscrollup,      {.i =  1} },
-	{ MODKEY,               XK_j,           kscrolldown,    {.i =  1} },
+	{ MODKEY,               XK_p,           kscrollup,      {.i =  1} },
+	{ MODKEY,               XK_n,           kscrolldown,    {.i =  1} },
 	/* { MODKEY,               XK_Up,          kscrollup,      {.i =  1} }, */
 	/* { MODKEY,               XK_Down,        kscrolldown,    {.i =  1} }, */
 	{ MODKEY,               XK_u,           kscrollup,      {.i = -1} },
